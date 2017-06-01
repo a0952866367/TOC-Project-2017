@@ -55,10 +55,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
 * user
 	* Input: "/start"
-		* Reply: "Welcome to Tennis Good Good"
-        * Reply: "1. ATP Rankings (Men)
-2. WTA Rankings (Women)
-3. Tennis Tournaments"
+		![fsm](./img/show-fsm.png)
 
 	* Input: "go to state2"
 		* Reply: "I'm entering state2"
