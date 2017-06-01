@@ -52,19 +52,32 @@ python3 app.py
 The initial state is set to `user`.
 
 * user
-	* Input: "/start" --> state0
+	* Input: "/start"
+    * Reply: 
+        ![fsm](./img/readme1.jpg)
     * Go to: state0
-		![fsm](./img/readme1.jpg)
 
     * Input: string contains "ATP" or "Men" or "1"
-    * Go to: state2
-        ![fsm](./img/readme2.jpg)
+    * Reply:
         ![fsm](./img/readme3.jpg)
+    * Go to: state2
+    
+    * Input: string contains "WTA" or "Women" or "2"
+    * Reply:
+        ![fsm](./img/readme2.jpg)
+    * Go to: state1
+
+    * Input: string contains "Tennis" or "Tournament" or "3"
+    * Reply:
         ![fsm](./img/readme4.jpg)
+    * Go to: state3
     
 
 * state0
     * Go Back: user
+
+* state1
+    * Input: 
     
 
 
