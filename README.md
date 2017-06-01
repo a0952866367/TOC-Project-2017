@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### Secret Data
 
-`API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
+`WEBHOOK_URL` in app.py **MUST** be set to proper values.
 Otherwise, you might not be able to run your code.
 
 ### Run Locally
@@ -28,7 +28,7 @@ You can either setup https server or using `ngrok` as a proxy.
 **`ngrok` would be used in the following instruction**
 
 ```sh
-ngrok http 5000
+./ngrok http 5000
 ```
 
 After that, `ngrok` would generate a https URL.
