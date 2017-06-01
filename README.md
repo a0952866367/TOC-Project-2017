@@ -1,8 +1,12 @@
 # TOC Project 2017
 
-Template Code for TOC Project 2017
+Tennis Good Good Bot
 
-A telegram bot based on a finite state machine
+A telegram bot based on a finite state machine,
+
+which provide service of searching ATP / WTA rankings
+
+also introduction of Tennis Grand Slam.
 
 ## Setup
 
@@ -50,8 +54,11 @@ The initial state is set to `user`.
 Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
 
 * user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+	* Input: "/start"
+		* Reply: "Welcome to Tennis Good Good"
+        * Reply: "1. ATP Rankings (Men)
+2. WTA Rankings (Women)
+3. Tennis Tournaments"
 
 	* Input: "go to state2"
 		* Reply: "I'm entering state2"
@@ -59,3 +66,4 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
 ## Author
 [Lee-W](https://github.com/Lee-W)
+[Andy Tseng](https://github.com/a0952866367)
