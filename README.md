@@ -51,14 +51,21 @@ python3 app.py
 ## Usage
 The initial state is set to `user`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
 * user
-	* Input: "/start"
+	* Input: "/start" --> state0
+    * Go to: state0
 		![fsm](./img/readme1.jpg)
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+    * Input: string contains "ATP" or "Men" or "1"
+    * Go to: state2
+        ![fsm](./img/readme2.jpg)
+        ![fsm](./img/readme3.jpg)
+        ![fsm](./img/readme4.jpg)
+    
+
+* state0
+    * Go Back: user
+    
 
 
 ## Author
