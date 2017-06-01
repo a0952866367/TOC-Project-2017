@@ -55,7 +55,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
 * user
 	* Input: "/start"
-		![fsm](./img/show-fsm.png)
+		![fsm](./img/readme1.jpg)
 
 	* Input: "go to state2"
 		* Reply: "I'm entering state2"
